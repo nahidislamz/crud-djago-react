@@ -1,6 +1,6 @@
 function Footer() {
   return (
-    <footer className="page-footer font-small purple darken-3">
+    <footer className="page-footer font-small mdb-color darken-4">
       <div className="container">
         <div className="row">
           <div className="col-md-12 py-5">
@@ -35,7 +35,7 @@ function Footer() {
 
       <div className="footer-copyright text-center py-3">
         © 2020 Copyright:
-        <a href="https://mdbootstrap.com/"> pinkgalric.com</a>
+        <a href="#"> nahidislamz</a>
       </div>
     </footer>
   );

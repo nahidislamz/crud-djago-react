@@ -16,6 +16,9 @@ code {
   margin: 1%;
   left: 35%;
 }
+.btn {
+  border-radius: 16px;
+}
 @media screen and (max-width: 930px) {
   .login {
     left: 1%;

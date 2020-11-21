@@ -2,19 +2,22 @@ import axios from "axios";
 const API_URL = "http://localhost:8000";
 
 export default class InfoService {
-  getInfos() {
+  async getInfos() {
     const url = `${API_URL}/api/info/`;
-    return axios.get(url).then((response) => response.data);
+    const response = await axios.get(url);
+    return response.data;
   }
 
-  getInfoById(id) {
+  async getInfoById(id) {
     const url = `${API_URL}/api/info/?id=${id}`;
-    return axios.get(url).then((response) => response.data);
+    const response = await axios.get(url);
+    return response.data;
   }
 
-  deleteInfo(id) {
+  async deleteInfo(id) {
     const url = `${API_URL}/api/info/?id=${id}`;
-    return axios.delete(url).then((response) => response.data);
+    const response = await axios.delete(url);
+    return response.data;
   }
 
   createInfo(info) {
@@ -22,8 +25,9 @@ export default class InfoService {
     return axios.post(url, info);
   }
 
-  updateInfo(info) {
+  async updateInfo(info) {
     const url = `${API_URL}/api/info/`;
-    return axios.put(url, info).then((response) => response.data);
+    const response = await axios.put(url, info);
+    return response.data;
   }
 }
