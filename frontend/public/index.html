@@ -42,6 +42,18 @@
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="js/mdb.min.js"></script>
     <!-- Your custom scripts (optional) -->
-    <script type="text/javascript"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".vid-item").each(function (index) {
+          $(this).on("click", function () {
+            var current_index = index + 1;
+            $(".vid-item .thumb").removeClass("active");
+            $(".vid-item:nth-child(" + current_index + ") .thumb").addClass(
+              "active"
+            );
+          });
+        });
+      });
+    </script>
   </body>
 </html>

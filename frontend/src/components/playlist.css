@@ -1,0 +1,45 @@
+.title {
+  width: 100%;
+  font-size: large;
+  color: #d9d9d9;
+  padding: 10px;
+  font-weight: bolder;
+}
+.v-list {
+}
+ol#vid-list {
+  margin: 0;
+  padding: 0;
+  background: #222;
+}
+
+ol#vid-list li {
+  list-style: none;
+}
+
+ol#vid-list li a {
+  text-decoration: none;
+  background-color: #222;
+  height: 90px;
+  display: block;
+  padding: 0px;
+}
+
+ol#vid-list li a:hover {
+  background-color: #666666;
+}
+
+.vid-thumb {
+  float: left;
+  margin-right: 8px;
+}
+
+.active-vid {
+  background: #3a3a3a;
+}
+
+@media (max-width: 960px) {
+  .v-list {
+    margin-top: 10px;
+  }
+}

@@ -7,11 +7,11 @@ import Navbar from "./containers/Navbar";
 import HomePage from "./components/Home";
 import UserInfoAdd from "./components/UserInfoAdd";
 import UserInfoUpdate from "./components/UserInfoUpdate";
+import PlayList from "./components/Playlist";
 import Footer from "./containers/Footer";
 
 function App() {
   const [token, setToken] = useState("");
-
   const userLogin = (tok) => {
     setToken(tok);
   };
@@ -27,6 +27,7 @@ function App() {
         <Route path="/signup" component={SignUp} />
         <Route path="/addnew" component={UserInfoAdd} />
         <Route path="/updateinfo" component={UserInfoUpdate} />
+        <Route path="/playlist" component={PlayList} />
         <Footer />
       </div>
     </Router>

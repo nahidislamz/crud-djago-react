@@ -21,6 +21,13 @@ function Navbar() {
           className="collapse navbar-collapse"
           id="navbarSupportedContent-555"
         >
+          <ul className="navbar-nav">
+            <li className="nav-item">
+              <a className="nav-link waves-effect waves-light" href="/playlist">
+                <i className="fas fa-video"> Playlist</i>
+              </a>
+            </li>
+          </ul>
           <ul className="navbar-nav ml-auto nav-flex-icons">
             <li className="nav-item">
               <a className="nav-link waves-effect waves-light" href="/signin">
