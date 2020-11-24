@@ -5,8 +5,11 @@ function PlayList(props) {
   const [videoList, setVideoList] = useState([]);
 
   useEffect(() => {
+    const playlistId = "PL68vtVtLisq91NJp3n9Pr2_gXtPmw9kOu";
     fetch(
-      "https://youtube.googleapis.com/youtube/v3/playlistItems?part=snippet%2CcontentDetails&maxResults=12&playlistId=PL68vtVtLisq8D34w9ucTHO2XySDJ5tEm8&key=AIzaSyB9711lc70D6h8D8ZLwAfHboIQKH235hco"
+      "https://youtube.googleapis.com/youtube/v3/playlistItems?part=snippet%2CcontentDetails&maxResults=10&playlistId=" +
+        playlistId +
+        "&key=AIzaSyB9711lc70D6h8D8ZLwAfHboIQKH235hco"
     )
       .then((res) => res.json())
       .then((data) => {
@@ -30,7 +33,7 @@ function PlayList(props) {
   return (
     <div className="p-5">
       <h1 className="p-2 text-center text-bold">Video PlayList</h1>
-      <div className="v-list">
+      <div className="v-list card">
         <ol id="vid-list">
           {videoList.map((item) => {
             return (

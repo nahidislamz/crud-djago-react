@@ -1,16 +1,15 @@
 .title {
   width: 100%;
   font-size: large;
-  color: #d9d9d9;
+  color: #292929;
   padding: 10px;
   font-weight: bolder;
 }
-.v-list {
-}
+
 ol#vid-list {
   margin: 0;
   padding: 0;
-  background: #222;
+  background: #fff;
 }
 
 ol#vid-list li {
@@ -19,14 +18,14 @@ ol#vid-list li {
 
 ol#vid-list li a {
   text-decoration: none;
-  background-color: #222;
+  background-color: #fff;
   height: 90px;
   display: block;
   padding: 0px;
 }
 
 ol#vid-list li a:hover {
-  background-color: #666666;
+  background-color: #d9d9d9;
 }
 
 .vid-thumb {
